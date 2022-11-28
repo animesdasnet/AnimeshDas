@@ -84,3 +84,17 @@ For many applications, we must create and manage groups of related objects. Ther
 Arrays are most useful for creating and working with a fixed number of strongly typed objects.
 Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
 A collection is a class, so you must declare an instance of the class before you can add elements to that collection.
+
+// Create a list of strings.
+var salmons = new List<string>();
+salmons.Add("chinook");
+salmons.Add("coho");
+salmons.Add("pink");
+salmons.Add("sockeye");
+
+// Iterate through the list.
+foreach (var salmon in salmons)
+{
+    Console.Write(salmon + " ");
+}
+// Output: chinook coho pink sockeye
